@@ -7,16 +7,19 @@
             <style>
                             [data-sidebartype="full"] .logo-icon {
                                                     display: none; }
+                            [data-sidebartype="mini-sidebar"] .logo-text {
+                                display: none;
+                            }
 
 
             </style>
             <a class="navbar-brand" href="{% url 'dashboard:dashboard' %}">
                 <b class="logo-icon p-l-6">
-                    <img src="{% static 'logo.png' %}" class="light-logo" style="height: 3.1rem;"/>
+                    <img src="{% static 'logo_altia_mini.png' %}" class="light-logo" style="height: 3.1rem;"/>
 
                 </b>
-                <span class="logo-text">
-                             <img src="{% static 'archery.png' %}" class="light-logo" style="height: 3.6rem;"/>
+                <span class="logo-text" style="background-color: white;margin: 5px;border-radius: 5px;">
+                             <img src="{% static 'logo_altia.png' %}" class="light-logo" style="height: 3.6rem;"/>
 
                         </span>
             </a>

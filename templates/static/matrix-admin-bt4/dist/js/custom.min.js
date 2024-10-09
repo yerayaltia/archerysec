@@ -89,11 +89,11 @@ $(function() {
     });
 
     //****************************
-    /* This is for the mini-sidebar if width is less then 1170*/
+    /* This is for the mini-sidebar if width is less then 770*/
     //**************************** 
     var setsidebartype = function() {
         var width = (window.innerWidth > 0) ? window.innerWidth : this.screen.width;
-        if (width < 1170) {
+        if (width < 770) {
             $("#main-wrapper").attr("data-sidebartype", "mini-sidebar");
         } else {
             $("#main-wrapper").attr("data-sidebartype", "full");
